@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Die Bodenschmiede - Professionelle Bodenverlegung und Restauration">
+    <title>Die Bodenschmiede - Ihre Böden, unsere Leidenschaft</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <span class="brand-icon">◆</span>
+                <span class="brand-text" data-i18n="brand">Die Bodenschmiede</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home" data-i18n="nav_home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" data-i18n="nav_services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio" data-i18n="nav_portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-i18n="nav_about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-i18n="nav_contact">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- Language Switcher -->
+                <div class="language-switcher ms-3">
+                    <button class="lang-btn active" data-lang="de" title="Deutsch">DE</button>
+                    <button class="lang-btn" data-lang="en" title="English">EN</button>
+                    <button class="lang-btn" data-lang="ar" title="العربية">AR</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8">
+                    <h1 class="hero-title" data-i18n="hero_title">Your Floors, Our Passion</h1>
+                    <p class="hero-subtitle" data-i18n="hero_subtitle">Craftsmanship That Lasts</p>
+                    <p class="hero-description" data-i18n="hero_description">Professional flooring installation, restoration, and refinishing services for your home and business.</p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal" data-i18n="btn_quote">Get a Free Quote</button>
+                        <button class="btn btn-outline-light btn-lg ms-3" href="#services" data-i18n="btn_learn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" data-i18n="services_title">Our Services</h2>
+                <p class="section-subtitle" data-i18n="services_subtitle">Comprehensive flooring solutions for every need</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Service 1: Parquet -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3 class="service-title" data-i18n="service_parquet_title">Parquet & Wood Flooring</h3>
+                        <p class="service-description" data-i18n="service_parquet_desc">Professional installation, sanding, and refinishing of premium hardwood floors including oak, beech, and pine.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2: Vinyl & Laminate -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3 class="service-title" data-i18n="service_vinyl_title">Vinyl, SPC & Laminate</h3>
+                        <p class="service-description" data-i18n="service_vinyl_desc">Durable, water-resistant flooring solutions perfect for kitchens, bathrooms, and high-traffic areas.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3: Carpet -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-rug"></i>
+                        </div>
+                        <h3 class="service-title" data-i18n="service_carpet_title">Carpet Installation</h3>
+                        <p class="service-description" data-i18n="service_carpet_desc">Comfortable, slip-resistant carpeting tailored to your preferences and space requirements.</p>
+                    </div>
+                </div>
+
+                <!-- Service 4: Stair Cladding -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-stairs"></i>
+                        </div>
+                        <h3 class="service-title" data-i18n="service_stairs_title">Stair Cladding</h3>
+                        <p class="service-description" data-i18n="service_stairs_desc">Modernize your stairs without demolition. Professional cladding and finishing services.</p>
+                    </div>
+                </div>
+
+                <!-- Service 5: Subfloor Preparation -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="service-title" data-i18n="service_prep_title">Subfloor Preparation</h3>
+                        <p class="service-description" data-i18n="service_prep_desc">Leveling, smoothing, and preparation for perfect flooring installation results.</p>
+                    </div>
+                </div>
+
+                <!-- Service 6: Material Supply -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <h3 class="service-title" data-i18n="service_materials_title">Material Supply</h3>
+                        <p class="service-description" data-i18n="service_materials_desc">High-quality flooring materials at fair prices. We source the best products for your project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="about" class="why-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" data-i18n="why_title">Why Choose Us</h2>
+                <p class="section-subtitle" data-i18n="why_subtitle">Excellence in every detail</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="why-title" data-i18n="why_expertise_title">Expert Craftsmanship</h4>
+                        <p class="why-text" data-i18n="why_expertise_text">Years of experience in professional flooring installation and restoration.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h4 class="why-title" data-i18n="why_quality_title">Premium Materials</h4>
+                        <p class="why-text" data-i18n="why_quality_text">We use only the highest quality materials and proven techniques.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4 class="why-title" data-i18n="why_service_title">Customer Focused</h4>
+                        <p class="why-text" data-i18n="why_service_text">Your satisfaction is our priority. We deliver exceptional service every time.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4 class="why-title" data-i18n="why_reliable_title">Reliable & Timely</h4>
+                        <p class="why-text" data-i18n="why_reliable_text">Professional project management and on-time delivery guaranteed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" data-i18n="portfolio_title">Our Portfolio</h2>
+                <p class="section-subtitle" data-i18n="portfolio_subtitle">Showcase of completed projects</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image" style="background: linear-gradient(135deg, #8B7355 0%, #D2B48C 100%);"></div>
+                        <div class="portfolio-info">
+                            <h4 class="portfolio-title" data-i18n="portfolio_project1">Modern Parquet Installation</h4>
+                            <p class="portfolio-type" data-i18n="portfolio_type_parquet">Parquet Flooring</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image" style="background: linear-gradient(135deg, #696969 0%, #A9A9A9 100%);"></div>
+                        <div class="portfolio-info">
+                            <h4 class="portfolio-title" data-i18n="portfolio_project2">Vinyl Kitchen Flooring</h4>
+                            <p class="portfolio-type" data-i18n="portfolio_type_vinyl">Vinyl & SPC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image" style="background: linear-gradient(135deg, #CD853F 0%, #DEB887 100%);"></div>
+                        <div class="portfolio-info">
+                            <h4 class="portfolio-title" data-i18n="portfolio_project3">Stair Cladding Renovation</h4>
+                            <p class="portfolio-type" data-i18n="portfolio_type_stairs">Stair Cladding</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" data-i18n="contact_title">Get In Touch</h2>
+                <p class="section-subtitle" data-i18n="contact_subtitle">We're here to help with your flooring needs</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4 data-i18n="contact_address_title">Address</h4>
+                        <p data-i18n="contact_address">Im Dillenroth 3, 36100 Petersberg</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4 data-i18n="contact_phone_title">Phone</h4>
+                        <p><a href="tel:+491763445782">0176 3445 4782</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4 data-i18n="contact_email_title">Email</h4>
+                        <p><a href="mailto:info@die-bodenschmiede.de">info@die-bodenschmiede.de</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4 data-i18n="contact_hours_title">Hours</h4>
+                        <p data-i18n="contact_hours">Mon-Fri: 08:00 - 17:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal" data-i18n="btn_contact">Contact Us Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" data-i18n="modal_title">Get a Free Quote</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label" data-i18n="form_name">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label" data-i18n="form_email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label" data-i18n="form_phone">Phone</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="service" class="form-label" data-i18n="form_service">Service Interested In</label>
+                            <select class="form-select" id="service">
+                                <option data-i18n="form_select_service">Select a service...</option>
+                                <option data-i18n="service_parquet_title">Parquet & Wood Flooring</option>
+                                <option data-i18n="service_vinyl_title">Vinyl, SPC & Laminate</option>
+                                <option data-i18n="service_carpet_title">Carpet Installation</option>
+                                <option data-i18n="service_stairs_title">Stair Cladding</option>
+                                <option data-i18n="service_prep_title">Subfloor Preparation</option>
+                                <option data-i18n="service_materials_title">Material Supply</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label" data-i18n="form_message">Message</label>
+                            <textarea class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="btn_cancel">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="submitForm()" data-i18n="btn_send">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title" data-i18n="footer_company">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                        <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                        <li><a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a></li>
+                        <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title" data-i18n="footer_services">Services</h5>
+                    <ul class="footer-links">
+                        <li><a data-i18n="service_parquet_title">Parquet & Wood</a></li>
+                        <li><a data-i18n="service_vinyl_title">Vinyl & Laminate</a></li>
+                        <li><a data-i18n="service_carpet_title">Carpet</a></li>
+                        <li><a data-i18n="service_stairs_title">Stair Cladding</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title" data-i18n="footer_contact">Contact</h5>
+                    <p>
+                        <i class="fas fa-phone"></i> <a href="tel:+491763445782">0176 3445 4782</a><br>
+                        <i class="fas fa-envelope"></i> <a href="mailto:info@die-bodenschmiede.de">info@die-bodenschmiede.de</a><br>
+                        <i class="fas fa-map-marker-alt"></i> <span data-i18n="contact_address">Im Dillenroth 3, 36100 Petersberg</span>
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title" data-i18n="footer_follow">Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <p class="mb-0" data-i18n="footer_copyright">&copy; 2025 Die Bodenschmiede. All rights reserved.</p>
+                <p class="small mt-2">
+                    <a href="#" data-i18n="footer_privacy">Privacy Policy</a> | 
+                    <a href="#" data-i18n="footer_terms">Terms of Service</a> | 
+                    <a href="#" data-i18n="footer_imprint">Imprint</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Translations -->
+    <script src="/assets/js/translations.js"></script>
+    
+    <!-- Main JS -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
